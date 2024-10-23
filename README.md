@@ -22,7 +22,6 @@ Ce projet est une application de gestion de fichiers en Python qui permet de :
 4. Fichier de log:
 - Un fichiers de logs est généré pour enregistrer les actions effectuées, notament la lecture, l'écriture et les résultats de recherches. 
 
-
 ## Installation
 
 ## Prérequis 
@@ -47,6 +46,7 @@ cd /FileManager/Python
 
 Une fois les dépenadnces installées, Vous pouvez exécuter le fichier Python pour démarrer le gestionnaire de fichiers:
 
+Python main.py
 
 
     
@@ -67,5 +67,5 @@ Une fois les dépenadnces installées, Vous pouvez exécuter le fichier Python p
 ## Fichier de Logs
 
 Le fichier de logs (log.txt) permet de tracés toutes les actions effectuées par le programme. Voici un exemple de contenu d'un fichier de logs aprés plusieurs opérations: 
-
+![Capture d'un test](C:\Users\GLC\Downloads)
 
