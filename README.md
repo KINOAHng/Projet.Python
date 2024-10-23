@@ -30,11 +30,11 @@ Ce projet est une application de gestion de fichiers en Python qui permet de :
 
 - Vous pouvez installer les bibliothèques supplémentaires si nécessaire avec:
 
-pip install -r requirements.txt
+``pip install -r requirements.txt``
 
 Si le fichier requirements.txt n'existe pas encore, vous pouvez le créer avec :
 
-pip freeze > requirements.txt
+``pip freeze > requirements.txt``
 
 ## Etapes pour cloner le projet
 
@@ -44,13 +44,13 @@ https://github.com/KINOAHng/Projet.Python.git
 
 2. Accédez au répertoire du projet:
 
-cd /FileManager/Python
+``cd /FileManager/Python``
 
 ## Excéxuter l'application
 
 Une fois les dépenadnces installées, Vous pouvez exécuter le fichier Python pour démarrer le gestionnaire de fichiers:
 
-Python main.py
+``Python main.py``
 
 
     
@@ -72,13 +72,13 @@ Python main.py
 
 1. Lecture d'un fichier
 pour lire le contenu d'un fichier, utilisez la commande suivante dans le fichier
-python main.py read log.txt
+``python main.py read log.txt``
 2. Ecriture dans un fichier
 Pour ecrire du texte dans un fichier ou en créer un nouveau :
-python main.py write log.txt < Texte_à_ajouté>
+``python main.py write log.txt < Texte_à_ajouté>``
 3. Analyse de fichier (recherche de mot-clé)
 Pour analyser un fichier et rechercher un mot-clé:
-python main.py search <log.txt> "ERROR"
+``python main.py search <log.txt>`` "ERROR"
 Cela affichera le nombre d'occurrences du mot "ERROR" dans le fichier spécifié.
 
 ## Gestion des erreurs
