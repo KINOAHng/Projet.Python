@@ -87,12 +87,12 @@ Cela affichera le nombre d'occurrences du mot "ERROR" dans le fichier spécifié
 
 ## Structure du projet
 
-projet-gestionnaire-fichiers/
+ projet-gestionnaire-fichiers/
 │
 ├── main.py                 # Fichier principal contenant la logique du gestionnaire de fichiers
 ├── app.log                 # Fichier log généré automatiquement
 ├── requirements.txt         # Liste des dépendances Python
 └── README.md                # Documentation du projet
 
-## Contribuer
-Les contributions sont les bienvenues ! Si vous souhaitez proposer des modifications, ouvrez une pull request ou créez une issue pour discuter de vos suggestions.
+## Contribuer:
+Les contributions sont les bienvenues ! Si vous souhaitez proposer des modifications, ouvrez une pull request ou créez une issue pour discuter de vos suggestions. :
