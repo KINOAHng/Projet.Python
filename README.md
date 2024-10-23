@@ -30,7 +30,11 @@ Ce projet est une application de gestion de fichiers en Python qui permet de :
 
 - Vous pouvez installer les bibliothèques supplémentaires si nécessaire avec:
 
-pip install -r requirements.txt 
+pip install -r requirements.txt
+
+Si le fichier requirements.txt n'existe pas encore, vous pouvez le créer avec :
+
+pip freeze > requirements.txt
 
 ## Etapes pour cloner le projet
 
@@ -64,8 +68,31 @@ Python main.py
 - Ouvre le fichier en mode lecture, cherche le mot-clé dans les lignes, et affiche les résultats.
 - Enregistre l'action dans le fichier de logs.                                                                                                             
 
-## Fichier de Logs
+## Usage 
 
-Le fichier de logs (log.txt) permet de tracés toutes les actions effectuées par le programme. Voici un exemple de contenu d'un fichier de logs aprés plusieurs opérations: 
-![Capture d'un test](C:\Users\GLC\Downloads)
+1. Lecture d'un fichier
+pour lire le contenu d'un fichier, utilisez la commande suivante dans le fichier
+python main.py read log.txt
+2. Ecriture dans un fichier
+Pour ecrire du texte dans un fichier ou en créer un nouveau :
+python main.py write log.txt < Texte_à_ajouté>
+3. Analyse de fichier (recherche de mot-clé)
+Pour analyser un fichier et rechercher un mot-clé:
+python main.py search <log.txt> "ERROR"
+Cela affichera le nombre d'occurrences du mot "ERROR" dans le fichier spécifié.
 
+## Gestion des erreurs
+- Si un fichier est introuvable lors de la lecture ou de la recherche, une erreur sera affichée et enregistrée dans le fichier log.
+- Si le programme n'a pas les droits d'écriture ou de lecture, cela sera aussi enregistré dans le fichier log.
+
+## Structure du projet
+
+projet-gestionnaire-fichiers/
+│
+├── main.py                 # Fichier principal contenant la logique du gestionnaire de fichiers
+├── app.log                 # Fichier log généré automatiquement
+├── requirements.txt         # Liste des dépendances Python
+└── README.md                # Documentation du projet
+
+## Contribuer
+Les contributions sont les bienvenues ! Si vous souhaitez proposer des modifications, ouvrez une pull request ou créez une issue pour discuter de vos suggestions.
